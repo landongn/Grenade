@@ -16,7 +16,8 @@
 		<script>
 			require.config({
 				baseUrl: '../lib/',
-				waitSeconds: 15
+				waitSeconds: 15,
+				urlArgs: "bust=" +  (new Date()).getTime()
 			});
 
 			require(['grenade'], function(nade){
