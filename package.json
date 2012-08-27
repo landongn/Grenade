@@ -5,7 +5,9 @@
   "author": "Landon Noss <landongn@gmail.com>",
   "dependencies": {
     "grunt": "0.3.12",
-    "socket.io": "0.9.10"
+    "socket.io": "0.9.10",
+    "mocha": "*",
+    "chai": "*"
   },
   "engine": "node 0.8.7"
 }

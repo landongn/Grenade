@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Grenade Testbed</title>
+
+	</head>
+
+		<!--[if lt IE 7]><body class="ie oldie"><![endif]-->
+		<!--[if IE 7]><body class="ie7 ie oldie"><![endif]-->
+		<!--[if IE 8]><body class="ie8 ie oldie"><![endif]-->
+		<!--[if IE 9]><body class="ie9 ie oldie"><![endif]-->
+		<!--[if gt IE 9]><body class="ie"><![endif]-->
+		<!--[if !IE]><!--><body><!--<![endif]-->
+
+		<script src="../deps/require.js"></script>
+		<script>
+			require.config({
+				baseUrl: '../lib/',
+				waitSeconds: 15
+			});
+
+			require(['grenade'], function(nade){
+				console.log('loaded nade.');
+			});
+		</script>
+	</body>
+</html>

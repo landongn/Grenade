@@ -52,14 +52,10 @@ module.exports = function(grunt) {
       },
       globals: {'window':false, 'define':true, '$':true}
     },
-    uglify: {},
-    mocha: {
-      index: ['src/test/compat.html']
-    }
+    uglify: {}
   });
 
   // Default task.
   grunt.registerTask('default', 'lint');
-  grunt.loadNmpTasks('grunt-mocha');
 
 };
