@@ -1,0 +1,11 @@
+{
+  "name": "grenade",
+  "version": "0.0.1",
+  "description": "A flexible, lightweight multiplayer game engine for the web",
+  "author": "Landon Noss <landongn@gmail.com>",
+  "dependencies": {
+    "grunt": "0.3.12",
+    "socket.io": "0.9.10"
+  },
+  "engine": "node 0.8.7"
+}
