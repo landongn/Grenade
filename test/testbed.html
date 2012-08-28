@@ -3,6 +3,12 @@
 	<head>
 		<title>Grenade Testbed</title>
 
+<style type="text/css" media="screen">
+	body {
+		background:#000;
+		color:#fff;
+	}
+</style>
 	</head>
 
 		<!--[if lt IE 7]><body class="ie oldie"><![endif]-->
@@ -12,6 +18,8 @@
 		<!--[if gt IE 9]><body class="ie"><![endif]-->
 		<!--[if !IE]><!--><body><!--<![endif]-->
 
+
+		<div id="stage"></div>
 		<script src="../deps/require.js"></script>
 		<script>
 			require.config({
@@ -20,8 +28,8 @@
 				urlArgs: "bust=" +  (new Date()).getTime()
 			});
 
-			require(['grenade'], function(nade){
-				console.log('loaded nade.');
+			require(['init'], function(Screen){
+				Screen.startup();
 			});
 		</script>
 	</body>
