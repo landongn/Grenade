@@ -8,6 +8,12 @@
 		background:#000;
 		color:#fff;
 	}
+
+	canvas {
+		width:1024px;
+		height:768px;
+		border:inset 1px;
+	}
 </style>
 	</head>
 
@@ -19,12 +25,13 @@
 		<!--[if !IE]><!--><body><!--<![endif]-->
 
 
-		<div id="stage"></div>
+		<canvas id="stage"></canvas>
 		<script src="../deps/require.js"></script>
+		<script src="../deps/easel.js"></script>
 		<script>
 			require.config({
 				baseUrl: '../lib/',
-				waitSeconds: 15,
+				waitSeconds: 25,
 				urlArgs: "bust=" +  (new Date()).getTime()
 			});
 
